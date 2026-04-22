@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { LanguageProvider, useLanguage } from './lib/LanguageContext';
+import { LanguageProvider, useLanguage } from './lib/language_context';
 import { Search, MapPin, Stethoscope, BookOpen, Globe, User, Users, LayoutDashboard, ChevronRight, Menu, X, Plus, Edit2, Trash2, Save, ChevronDown, ChevronUp, Bell, Home, Info, Filter, ArrowRight, Sun, Moon, Calendar, Lock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Papa from 'papaparse';
-import { SPECIALTIES } from './constants/specialties';
-import { DOCTORS_SEED } from './constants/seedData';
-import { dataService, type Doctor, type Article } from './lib/dataService';
+import { SPECIALTIES } from './constants/specialties_data';
+import { DOCTORS_SEED } from './constants/seed_data';
+import { dataService, type Doctor, type Article } from './lib/data_service';
 import { auth, db } from './lib/firebase';
 import { onAuthStateChanged, signInAnonymously, signOut, User as FirebaseUser } from 'firebase/auth';
 import { collection, doc, getDoc, setDoc } from 'firebase/firestore';
