@@ -11,7 +11,7 @@ import { onAuthStateChanged, signInAnonymously, signOut, User as FirebaseUser } 
 import { collection, doc, getDoc, setDoc } from 'firebase/firestore';
 
 // --- Types ---
-// Interface definitions moved to dataService.ts
+// Interface definitions moved to data_service.ts
 
 // --- Mock Data ---
 const MOCK_DOCTORS: Doctor[] = [
